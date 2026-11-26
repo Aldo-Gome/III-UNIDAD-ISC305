@@ -20,3 +20,6 @@ Route::get('/personas/{id}', [PersonaController::class, 'show'])
  ->whereNumber('id');
 
 Route::post('/personas', [PersonaController::class, 'store']);
+
+Route::put('/personas/{id}', [PersonaController::class, 'update'])
+ ->whereNumber('id');
